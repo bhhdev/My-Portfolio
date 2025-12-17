@@ -1,0 +1,34 @@
+# ======================
+# ENV / SECRETS
+# ======================
+.env
+.env.local
+.env.*.local
+
+# ======================
+# DOCKER
+# ======================
+docker-compose.override.yml
+
+# ======================
+# DEPENDENCIES
+# ======================
+vendor/
+node_modules/
+
+# ======================
+# BUILD / CACHE
+# ======================
+.cache/
+.tmp/
+.var/
+dist/
+
+# ======================
+# IDE / OS
+# ======================
+.idea/
+.vscode/
+*.log
+.DS_Store
+Thumbs.db
