@@ -1,0 +1,38 @@
+
+
+services:
+  php:
+    build:
+      context: .
+      dockerfile: docker/php/Dockerfile
+    container_name: my-portfolio-php
+    env_file:
+      - .env
+    volumes:
+      - ./:/var/www/html
+    depends_on:
+      - database
+    networks:
+      - portfolio_network
+
+  database:
+    image: mariadb:11
+    container_name: my-portfolio-db
+    env_file:
+      - .env
+    environment:
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_USER: ${DB_USERNAME}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - portfolio_network
+
+volumes:
+  db_data:
+
+networks:
+  portfolio_network:
+    driver: bridge
