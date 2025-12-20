@@ -1,0 +1,144 @@
+/*//////////////////////////////////////////////// NAVBAR SECTION \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/* SURBRILLANCE NAVBAR */
+.navbar-section{
+    .navbar {
+        opacity: 0.9;
+        margin-top: 0.2%;
+        position: absolute;
+        z-index: 2;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    .navbar-nav{
+        padding-inline: 1.5rem;
+    }
+    li.nav-item {
+        text-decoration: underline red;
+        .nav-link{
+            text-align: center;
+            max-width: calc(100% + 2rem);
+            font-weight: bold;
+        }
+    }
+}
+
+
+.nav-link:hover {
+    text-decoration: underline red;
+    font-weight: bold;
+    background: linear-gradient(135deg, red, silver, red, white, red, silver, red, silver, red, white, red, silver, red);
+    background-size: 400% 400%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: glowing 50ms ease-in-out infinite;
+}
+@keyframes glowing {
+    0% {
+    background-position: 0% 0%;
+}
+    50% {
+    background-position: 400% 0%;
+}
+    100% {
+    background-position: 0% 0%;
+}
+}
+
+
+
+
+/*---------------------NAVBAR BURGER------------------*/
+
+.navbar-burger {
+    position: fixed !important;
+    top: 1rem;
+    left: 1rem;
+    background-color: red;
+    user-select: none;
+    z-index: 1500;
+}
+
+.nav-section .wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(14, 14, 14, 0.945);
+    z-index: 100;
+    transform: translateX(-100%);
+}
+
+.nav-section .wrapper.active {
+    transform: translateX(0%);
+    animation: displayWrapper 0.3s ease-out forwards;
+}
+.nav-section .wrapper.inactive {
+    transform: translateX(-100%);
+    animation: removeWrapper 0.3s ease-out forwards;
+}
+
+@keyframes displayWrapper {
+    to {
+        transform: translateX(100%);
+    }
+}
+@keyframes removeWrapper {
+    to {
+        transform: translateX(0%);
+    }
+}
+
+/** issue bg bulma **/
+.navbar {
+    background-color: transparent !important;
+}
+
+.nav-items-wrapper{
+    position: relative;
+}
+.nav-section .navbar-burger.is-active + .wrapper .nav-item {
+    font-weight: bold;
+    text-decoration: underline red;
+}
+
+.nav-section .navbar-burger.is-active + .wrapper .nav-item {
+    position: relative;
+    opacity: 0;
+    transform: translateY(-2rem);
+    animation-name: translateXNavItem;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.nav-section .wrapper .nav-item:nth-child(1) {
+    animation-delay: 0.2s;
+}
+.nav-section .wrapper .nav-item:nth-child(2) {
+    animation-delay: 0.4s;
+}
+.nav-section .wrapper .nav-item:nth-child(3) {
+    animation-delay: 0.6s;
+}
+.nav-section .wrapper .nav-item:nth-child(4) {
+    animation-delay: 0.8s;
+}
+.nav-section .wrapper .nav-item:nth-child(5) {
+    animation-delay: 1s;
+}
+
+@keyframes translateXNavItem {
+    0% {
+        opacity: 0;
+        transform: translateY(-2rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

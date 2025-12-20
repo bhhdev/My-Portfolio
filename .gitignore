@@ -23,6 +23,7 @@ node_modules/
 .tmp/
 .var/
 dist/
+*.css.map
 
 # ======================
 # IDE / OS
