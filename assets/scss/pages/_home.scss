@@ -1,0 +1,233 @@
+body {
+    background-color: red !important;
+}
+/*//////////////////////////////////////////////// SEPARATEUR SECTION \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/* SEPARATEUR STYLE */
+.separateur1 {
+    height: 4px;
+    width: 75%;
+    margin-top: 6.5%;
+    margin-left: 12.5%;
+}
+.separateur2 {
+    height: 2px;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-bottom: 3.1%;
+}
+
+/*//////////////////////////////////////////////// GENERAL SECTION \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/* ID STYLE */
+#contact, #competences, #projets, #cv {
+    height: 80vh;
+}
+#presentation {
+    height: 81vh;
+}
+
+.title-h6 {
+    text-decoration: underline red;
+    padding-top: 0.3%;
+    font-weight: bold;
+}
+
+
+                            /*////////////////////// DETAILS SECTION \\\\\\\\\\\\\\\\\\\\\\\*/
+
+/*//////////////////////////////////////////////// PRESENTATION SECTION \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/* PRESENTATION STYLE */
+.section-title {
+    padding-top: 1%;
+    text-decoration: underline red;
+    margin: 6% 0%;
+    font-weight: bold;
+}
+.h1 {
+    font-family: "Italianno", serif;
+    text-decoration: underline red;
+    transform: rotate(-7.5deg);
+    padding: 2% 0 0 0;
+
+}
+.photo {
+    height: 12rem;
+    width: 10rem;
+    background-color: grey;
+    border: 1px solid red;
+    margin: 5% 0 5% 0;
+}
+h2 {
+    padding: 8% 0 3% 0;
+    /* margin-top: 3%; */
+    text-decoration: underline red;
+}
+
+
+
+/*//////////////////////////////////////////////// COMPETENCES SECTION \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/* SECTION COMPETENCES STYLE */
+
+
+/* CARDS STYLE */
+
+.cont-lang-front, .cont-lang-back {
+    width: 48%;
+}
+.cont-framew-css, .cont-framew-back {
+    width: 32%;
+}
+.cont-lang-back {
+    width: 48%;
+}
+.cont-img {
+    height: 8rem;
+    width: 8rem;
+    gap: 2%;
+}
+
+.logo-lp {
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease-out;
+}
+.logo-js {
+  transform: scale(1.2);
+  height: 80%;
+  width: 90%;
+}
+.logo-sass {
+    transform: scale(1.45);
+    height: 90%;
+}
+.logo-symfo {
+    height: 90%;
+    width: 90%;
+}
+.logo-lp:hover {
+    transform: scale(1.2);
+}
+.logo-sass:hover {
+  transform: scale(1.70);
+}
+.logo-js:hover {
+  transform: scale(1.40);
+}
+.div-logo {
+    margin-top: 2%;
+}
+.cont {
+    margin-top: 1.5%;
+}
+.contenant-cards1, .contenant-cards2, .contenant-cards3 {
+    width: 40%;
+}
+.cont {
+    gap: 2%;
+}
+
+
+
+/*//////////////////////////////////////////////// CV SECTION \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/* SECTION CV STYLE */
+.emplois {
+    width: 33%;
+    height: 98.5%;
+    border-radius: 16px;
+    margin: 0.5%;
+    border: 1px solid white;
+}
+.middle-block {
+    width: 32%;
+}
+.bg-cv {
+    width: 100%;
+    height: 58%;
+    border-radius: 16px;
+    margin: 1.5% 0 0 0;
+    border: 1px solid white;
+}
+.contenant-identity {
+    width: 100%;
+    height: 42%;
+}
+
+.frame-photo {
+    background-color: gray;
+    border: 1px solid red;
+    border-radius: 10px;
+    height: 98%;
+    width: 35%;
+    margin: 1.5% 3% 3% 2%;
+}
+.contenant-identity {
+    width: 100%;
+    margin: 3% 0;
+}
+.name {
+    text-decoration: underline red;
+}
+.diplomes {
+    width: 100%;
+    height: 39.7%;
+    border-radius: 16px;
+    margin: 1.5% 0 0 0;
+    border: 1px solid white;
+}
+.divers {
+    width: 33%;
+    height: 98.5%;
+    border-radius: 16px;
+    margin: 0.5% 0 0.5% 0.5%;
+    border: 1px solid white;
+}
+
+.emplois:hover, .bg-cv:hover, .diplomes:hover, .divers:hover {
+    transform: scale(1.2);
+    z-index: 3;
+}
+
+
+/*//////////////////////////////////////////////// CONTACT SECTION \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/* SECTION CANTACT STYLE */
+.contenant-form {
+    height: 100%;
+    width: 100%;
+}
+.totle-h6 {
+    margin-bottom: 3%;
+}
+.frame-section {
+    height: 95%;
+    width: 75%;
+    background: linear-gradient(150deg,rgb(33, 33, 33) 15%, rgb(40, 40, 40) 20%, rgb(52, 52, 52) 25%,rgb(66, 65, 65),rgb(76,76,76),rgb(83, 83, 83) 35%,rgb(97, 97, 97),rgb(107, 107, 107),rgb(117, 117, 117),rgb(127, 127, 127),rgb(137, 137, 137),rgb(148, 148,148),rgb(159,159,159),rgb(169, 169, 169),rgb(179, 179, 179),rgb(189, 189, 189) 65%,rgb(169,169,169) 72%,rgb(148, 148,148), rgb(135,135,135), rgba(98, 98, 98) ,rgb(66, 65, 65) 90%, rgb(33,33,33));;
+    border: 3px solid red;
+    border-radius: 20px;
+    margin-bottom: 3%;
+}
+.style {
+    border: 1px solid red;
+}
+.text-space {
+    width: 80%;
+    margin: auto;
+}
+.div-textarea {
+    height: 12rem;
+    width: 80%;
+}
+.textarea {
+    width: 100%;
+    height: 12rem;
+    border: 1px solid red;
+    overflow: auto;
+    margin-left: 0%;
+}
+.form-label, .to {
+    text-decoration: underline red;
+}
+
+
+footer {
+    height: 20vh;
+    margin-top: 3%;
+}
