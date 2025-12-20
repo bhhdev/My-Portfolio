@@ -1,3 +1,4 @@
+
 services:
   nginx:
     image: nginx:alpine
@@ -40,13 +41,24 @@ services:
 
   phpmyadmin:
     image: phpmyadmin:latest
-    container_name: my-portfolio-pma
+    container_name: my-portfolio-pma-dev
     depends_on:
       - database
     environment:
       PMA_HOST: database
     ports:
       - "9091:80"
+    networks:
+      - portfolio_network
+
+  # ✅ SASS / SCSS WATCHER (DEV ONLY – Node)
+  sass:
+    image: node:20-alpine
+    container_name: my-portfolio-sass-dev
+    working_dir: /var/www/html
+    volumes:
+      - ./:/var/www/html
+    command: sh -c "npm install -g sass && sass --watch assets/scss/main.scss:public/assets/css/styles.css"
     networks:
       - portfolio_network
 
